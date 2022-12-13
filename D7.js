@@ -35,17 +35,31 @@ console.log(nump);
 /* ESERCIZIO 4
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+const numeriMiei = [10, 15, 30, 45, 33, 29, 7, 55, 368, 254];
+let counter = 0;
 
+numeriMiei.forEach(num => {
+  counter += num;
+});
+
+console.log(counter);
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
+const numeriMiei = [10, 15, 30, 45, 33, 29, 7, 55, 368, 254];
+const sommaR = numeriMiei.reduce((acc, cur) => acc + cur, 0);
+console.log("La somma con reduce è: " + sommaR);
 
 /* ESERCIZIO 6
-  Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
+  Scrivi una funzione che, dato un array di soli numeri 
+  e un numero n come parametri, 
+  ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
 /* ESERCIZIO 8
-  Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
+  Scrivi una funzione che, dato un array di stringhe, 
+  ritorni un nuovo array contenente le lunghezze delle rispettive stringhe
+   dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
